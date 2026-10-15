@@ -5,7 +5,7 @@ const outfit = Outfit({ subsets: ["latin"], weight: ["300", "400", "600", "800"]
 
 export const metadata = {
   title: "Joseph Victor",
-  description: "Cybersecurity student, DevSecOps and cloud engineer. Projects and lessons learned.",
+  description: "Cybersecurity student, DevSecOps and Cloud Engineer. Projects and lessons learned.",
 };
 
 export default function RootLayout({ children }) {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
         {children}
-        <footer className="foot">© {new Date().getFullYear()} Joseph Victor. Kano, Nigeria.</footer>
+        <footer className="foot">© {new Date().getFullYear()} Joseph Victor</footer>
       </body>
     </html>
   );
