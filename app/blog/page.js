@@ -7,7 +7,7 @@ export default function Blog() {
   return (
     <main>
       <section>
-        <h1 className="h1s">Lessons learned<span className="red">.</span></h1>
+        <h1 className="h1s">Tutorials and Guides<span className="red">.</span></h1>
         <p className="lead">Notes from building and breaking things in cybersecurity, DevOps and Linux.</p>
         {posts.length === 0 && <p className="muted">No posts yet. Publish your first one from /admin.</p>}
         {posts.map((p) => (
