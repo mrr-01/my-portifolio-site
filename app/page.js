@@ -23,7 +23,15 @@ export default function Home() {
           <div key={g.group} className="group">
             <h3>{g.group}</h3>
             {g.items.map((p) => (
-              <div key={p.name} className="row"><strong>{p.name}</strong><p>{p.text}</p></div>
+              <div key={p.name} className="row">
+                <strong>
+                  {p.post ? <a href={`/blog/${p.post}`}>{p.name}</a> : p.name}
+                </strong>
+                <p>{p.text}</p>
+                {p.url && (
+                  <p><a className="muted" href={p.url} target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+                )}
+              </div>
             ))}
           </div>
         ))}
